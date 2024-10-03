@@ -1,0 +1,493 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
+main {
+    overflow: hidden;
+}
+
+body {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+main {
+    margin-top: -1em;
+}
+
+.secao_principal {
+    padding: 13em 0 10em 0em;
+    background-color: white;
+}
+
+.conteudo_secao_principal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 15em;
+}
+
+.conteudo_secao_principal1 {
+    text-align: center;
+}
+
+.conteudo_secao_principal2 {
+    margin: 0 0 0 2%;
+    display: flex;
+    align-items: center;
+}
+
+.titulo_secao_principal {
+    display: flex;
+    font-size: 4em;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo_secao_principal_cor {
+    background-image: linear-gradient(60deg, rgb(0, 20, 204), rgb(142, 9, 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto_secao_principal {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+
+.texto_contato {
+    font-size: .8em;
+    margin: 3em 0;
+    color: #83408b;
+    font-family: "Optima", sans-serif;
+}
+
+.imagem__principal {
+    width: 640px;
+    height: 406.5px;
+    aspect-ratio: auto;
+}
+
+/*botao contato*/
+
+.container_botao_contato {
+    padding: 1em 3em;
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #bebebe;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.container_botao_contato:before {
+    content: '';
+    background: linear-gradient(45deg, #b2e8c3, #ccf3bc, #47ec00, #97f6b7);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.container_botao_contato:active {
+    color: #000
+}
+
+.container_botao_contato:active:after {
+    background: transparent;
+}
+
+.container_botao_contato:hover:before {
+    opacity: 1;
+}
+
+.container_botao_contato:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3ee955;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.titulo_secao_principal {
+    display: inline-block;
+    overflow: hidden;
+    /* animation: typing 2s steps(30, end) forwards;*/
+    color: black;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.resumo {
+    padding: 10em 0;
+    background-color: white;
+}
+
+.titulo_resumo {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    margin: 2em 0;
+
+    background-image: linear-gradient(60deg, rgb(0, 20, 204), rgb(142, 9, 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.importancia {
+    font-size: 1.5em;
+}
+
+.importancia p,
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: "Rubik", sans-serif;
+}
+
+.importancia1 {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.importancia1 P,
+.importancia2 P {
+    background-color: #a7a7a794;
+    padding: 2em;
+}
+
+.importancia1 h2,
+.importancia2 h2 {
+    background-image: linear-gradient(60deg, rgb(0, 0, 0), rgb(99, 80, 161));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.importancia2 {
+    text-align: center;
+    color: #000;
+}
+
+.projetos {
+    padding: 10em 0;
+}
+
+.titulo_projetos {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 2em 0;
+
+    background-image: linear-gradient(60deg, rgb(0, 20, 204), rgb(142, 9, 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dispositivo1,
+.dispositivo2 {
+    text-align: center;
+}
+
+.dispositivo1 img {
+    width: 25em;
+    margin-bottom: 5em;
+}
+
+.dispositivo2 img {
+    width: 15em;
+    margin-bottom: 5em;
+}
+
+
+.titulo_contato_main {
+    margin: .5em 0;
+    font-size: 3em;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    background-image: linear-gradient(60deg, rgb(0, 20, 204), rgb(142, 9, 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contato {
+    display: flex;
+    justify-content: right;
+    background-color: white;
+    margin: 0em -1em -1em -1em;
+    padding: 10em 5em 10em 5em;
+    margin-top: -1px;
+}
+
+.contatos a {
+    color: #000;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.contato_itens {
+    margin-right: 5em;
+}
+
+.contato ul {
+    padding: 1em 0;
+    display: flex;
+}
+
+.contato li {
+    margin: 1em;
+    list-style-type: none;
+    display: flex;
+}
+
+.contato li a {
+    font-family: "Rubik", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.contato li img {
+    width: 1em;
+    /* filter: invert(80%);*/
+}
+
+.contato li a:hover {
+    transition: color 0.3s ease;
+    color: rgb(112, 0, 204);
+}
+
+
+/* secao_apresentacao */
+
+
+.secao_apresentacao p {
+    text-align: center;
+    margin: 0 2em;
+    font-size: 2em;
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+}
+
+.secao_apresentacao {
+    border-top: 1px solid #fff;
+    padding: 10em 20em;
+    color: white;
+}
+
+.texto_principal {
+    background-image: linear-gradient(60deg, rgb(0, 20, 204), rgb(142, 9, 182));
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+
+
+
+    .secao_links_header {
+        display: none;
+    }
+
+    .container_botao_contato {
+        font-size: 1.5em;
+    }
+
+    .titulo_contato_main {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .titulo_contato_main {
+        font-size: 1.5em;
+    }
+
+    .contatos_zap {
+        font-size: 1em;
+    }
+
+    .contatos_email {
+        font-size: 1em;
+    }
+    
+    .contato {
+        padding: 0em;
+        display: flex;
+        justify-content: right;
+    }
+
+    .titulo_secao_principal {
+        font-size: 2em;
+    }
+
+    .secao_principal {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .conteudo_secao_principal {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .texto_principal {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .secao_apresentacao p {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .secao_apresentacao {
+        padding: 0;
+        margin-bottom: 15em;
+        padding-top: 10em;
+
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .titulo_projetos,
+    .titulo_resumo {
+        font-size: 2em;
+        margin: 2em 1em 0 1em;
+    }
+
+    .titulo_resumo {
+        margin-bottom: 2em;
+    }
+
+    .botao_menu {
+        background: none;
+        border: none;
+    }
+
+    .importancia {
+        margin: 0 1em 5em 1em;
+    }
+
+    .imagem__principal {
+        width: 320px;
+        height: 203px;
+        margin-top: 2em;
+    }
+
+    .container_botao_zap {
+        margin: 0;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .container_botao_contato {
+        margin: 0;
+        padding: 1em;
+    }
+
+    .conteudo_secao_principal2 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteudo_secao_principal {
+    }
+
+
+}
+
+@media screen and (max-width: 455px) {
+    .contatos {
+        display: none;
+    }
+    .contato {
+        display: flex;
+        justify-content: center;
+    }
+    .contato_itens {
+        margin: 0;
+        padding: 0;
+    }
+
+    .titulo_contato_main {
+        text-align: center;
+    }
+
+    .contato ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato ul li {
+        width: 32px;
+    }
+
+}
